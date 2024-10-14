@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Latihan Tailwind CSS</title>
+   <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center p-4">
+   <section id="title" class="text-center mb-8">
+      <h1 class="text-3xl font-semibold text-gray-800">Todo List Application</h1>
+   </section>
+   
+   <section id="input" class="flex space-x-4 mb-6 w-full max-w-lg">
+      <input type="text" name="assignment" id="assignment" 
+             class="border border-gray-300 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-gray-500 transition duration-300 ease-in-out"
+             placeholder="Masukkan tugas yang akan dikerjakan ...">
+      <input type="button" id="btn-tambah" value="Tambah"
+             class="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-800 cursor-pointer transition duration-300 ease-in-out">
+   </section>
+   
+   <section id="output" class="w-full max-w-lg bg-white rounded-lg shadow-md p-4">
+      <div class="flex justify-between items-center mb-3">
+         <span class="text-gray-700">Contoh tugas</span>
+         <div class="flex space-x-2">
+            <button class="bg-green-500 text-white px-3 py-1 rounded-md hover:bg-green-600 transition duration-300 ease-in-out">Selesai</button>
+            <button class="bg-red-500 text-white px-3 py-1 rounded-md hover:bg-red-600 transition duration-300 ease-in-out">Hapus</button>
+         </div>
+      </div>
+   </section>
+
+   <script src="main.js"></script>
+</body>
+</html>
